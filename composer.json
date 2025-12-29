@@ -1,0 +1,72 @@
+{
+    "name": "prolancee/dynamic-crud-api",
+    "description": "An advanced dynamic CRUD system providing a structured and extensible internal API layer for Laravel applications.",
+    "type": "library",
+    "license": "MIT",
+
+    "keywords": [
+        "laravel",
+        "laravel-package",
+        "api",
+        "laravel-api",
+        "crud",
+        "dynamic-crud",
+        "crud-api",
+        "api-crud",
+        "rest-api",
+        "crud-generator",
+        "admin-crud",
+        "admin-panel",
+        "backend-api",
+        "data-management",
+        "prolancee"
+    ],
+
+    "homepage": "https://flux.prolancee.com",
+
+    "authors": [
+        {
+            "name": "Salim Shaikh",
+            "email": "salim.shaikh.dev@gmail.com"
+        }
+    ],
+
+    "support": {
+        "issues": "https://github.com/prolancee/laravel-dynamic-crud-api/issues",
+        "source": "https://github.com/prolancee/laravel-dynamic-crud-api",
+        "docs":   "https://flux.prolancee.com/docs/laravel/dynamic-crud-api/1.0.0"
+    },
+
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/salimbuilds"
+        }
+    ],
+
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0",
+        "prolancee/support": "10.x-dev"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "PROLANCEE\\DYNAMIC\\CRUD\\Api\\": "src/"
+        }
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-10.x": "10.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "PROLANCEE\\DYNAMIC\\CRUD\\Api\\Providers\\AppServiceProvider"
+            ]
+        }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
