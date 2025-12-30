@@ -2,12 +2,13 @@
 
 namespace PROLANCEE\DYNAMIC\CRUD\Api\Providers;
 
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Contracts\Debug\ExceptionHandler;
 use PROLANCEE\DYNAMIC\CRUD\Api\App\Http\Middleware\{
     ValidateIntermediateRoutes,
     ForceJsonResponse,
